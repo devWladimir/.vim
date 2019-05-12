@@ -15,4 +15,5 @@ call plug#begin('~/.vim/plugged')
     Plug 'tobyS/pdv'
     Plug 'tobyS/vmustache'
     Plug 'SirVer/ultisnips'
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()

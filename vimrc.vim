@@ -4,11 +4,12 @@ source ~/.vim/plugins.vim			                            " Iclude plugins for Vim
 syntax enable						                            " Enable syntax for code.
 let mapleader=','					                            " Change default leader key for Vim.
 set nonumber						                            " Disable(nonumber) or Enable(number) for Vim line numbers.
-let ayucolor="light"				                            " Light theme for Ayu color scheme.
+"let ayucolor="light"				                            " Light theme for Ayu color scheme.
 let ayucolor="mirage"				                            " Mirage theme for Ayu color scheme.
-let ayucolor="dark"					                            " Dark theme for Ayu color scheme.
+"let ayucolor="dark"					                        " Dark theme for Ayu color scheme.
 "colorscheme desert					                            " Set default theme for Vim.
 colorscheme ayu						                            " Set default theme for gVim.
+let g:airline_theme='base16_mocha'                              " Set default colorscheme for VimAirline.
 set linespace=0						                            " Set the line space for Vim if this support.
 set guifont=Fira_Code:h12			                            " Set the default font family and font size for Vim.
 set encoding=utf-8					                            " Set default charset.
@@ -95,6 +96,13 @@ autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
 vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<cr>
+
+let g:ctrlp_prompt_mappings = {
+    \ 'PrtSelectMove("j")':   ['∆', '<c-n>'],
+    \ 'PrtSelectMove("k")':   ['˚', '<c-p>'],
+    \ 'PrtHistory(-1)':       ['<down>'],
+    \ 'PrtHistory(1)':        ['<up>'],
+    \ }
 
 " PVD
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
