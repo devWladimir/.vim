@@ -8,7 +8,8 @@ set nonumber						                            " Disable(nonumber) or Enable(numb
 let ayucolor="mirage"				                            " Mirage theme for Ayu color scheme.
 "let ayucolor="dark"					                        " Dark theme for Ayu color scheme.
 "colorscheme desert					                            " Set default theme for Vim.
-colorscheme ayu						                            " Set default theme for gVim.
+"colorscheme ayu					                            " Set default theme for gVim.
+colorscheme atom-dark-256		                                " Atom datk 256 theme for terminal what no have support termguicolors.
 let g:airline_theme='base16_mocha'                              " Set default colorscheme for VimAirline.
 set linespace=0						                            " Set the line space for Vim if this support.
 set guifont=Fira_Code:h12			                            " Set the default font family and font size for Vim.
